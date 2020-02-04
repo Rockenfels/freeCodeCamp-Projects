@@ -1,0 +1,268 @@
+@media (max-width: 800px) {
+  #project-grid {
+    background-color: #808F68;
+    display: grid;
+    grid-template-rows: 4rem repeat(4, minmax(150px, 1fr));
+    grid-template-columns: 90%;
+    grid-template-areas:
+      "projectHeader"
+      "muppet"
+      "cheese"
+      "bike"
+      "coffee";
+    grid-row-gap: 1em;
+    justify-content: center;
+    height: auto;
+    padding-bottom: 1rem;
+    box-shadow: 1px 1px 2px black;
+  }
+  #projectHeader{
+    grid-column: 1/2;
+  }
+}
+
+@media (min-width: 801px) {
+  #project-grid {
+    background-color: #808F68;
+    display: grid;
+    grid-template-rows: 4rem repeat(2, minmax(400px, 1fr));
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 1em;
+    grid-column-gap: 1em;
+    grid-template-areas:
+      "projectHeader"
+      "muppet cheese"
+      "bike coffee";
+    justify-content: center;
+    height: auto;
+    padding-bottom: 1rem;
+    box-shadow: 1px 1px 2px black;
+  }
+  #projectHeader{
+     grid-column: 1/3;
+  }
+}
+
+a {
+  font-size: 2em;
+}
+
+a:link {
+  color: #FFF;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #397DBC;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(232, 232, 232);
+  z-index: 0;
+  margin: 0;
+  display: block;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3{
+  font-size: 1.5rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h4{
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  font-size: 1em;
+  margin-top: .25em;
+  color: white;
+}
+
+nav {
+  background-color: #C26753;
+  width: 100%;
+  height: 3em;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 9001;
+  box-shadow: 1px 1px 2px black;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  list-style-type: none;
+  align-items: center;
+  height: inherit;
+  margin: 0 auto;
+}
+
+ul:link {
+  text-decoration: none;
+}
+
+.contact-tile{
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.image {
+  position: relative;
+  margin-top: 1rem;
+  height: auto;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.link-text{
+}
+
+.thumbnail{
+  width: 20%;
+  height: auto;
+  padding-right: .25rem;
+}
+
+.project-tile {
+  background-color: #48693C;
+  box-shadow: 1px 1px 2px black;
+  width: inherit;
+  height: inherit;
+  display: block;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#bike {
+  grid-area: "bike";
+}
+
+#cheese {
+  grid-area: "cheese";
+}
+
+#codepen{
+  grid-area: "codepen";
+}
+
+#coffee {
+  grid-area: "coffee";
+}
+
+#contact{
+  width: auto;
+  height: 100%;
+  background-color: #C26753;
+  overflow: auto;
+  padding-bottom: 1rem;
+}
+
+#contact-grid {
+  display: grid;
+  grid-template-rows: .5rem .25rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 20vw));
+  grid-row-gap: .25em;
+  grid-column-gap: .25em;
+  grid-template-areas:
+    "contact-header"
+    "profile-link codepen gitHub email";
+  justify-content: space-around;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#contact-header{
+  align-self: flex-start;
+  grid-area: "contact-header";
+  text-shadow: 1px 1px 2px black;
+  grid-column: 1/4;
+  margin: .5em auto;
+  padding-bottom: 1rem;
+}
+
+#email{
+  grid-area: "email";
+}
+
+#gitHub
+{
+  grid-area: "gitHub";
+}
+
+#mainTitle {
+  font-size: 3em;
+  text-shadow: 1px 1px 2px black;
+  margin: 0 auto;
+}
+
+#muppet {
+  grid-area: "muppet";
+}
+
+#projects{
+  text-align: center;
+  margin: 0 auto;
+}
+
+#projectHeader{
+  position: relative;
+  align-self: center;
+  justify-self: center;
+  grid-area: "projectHeader";
+  text-decoration: underline;
+  text-shadow: 1px 1px 2px black;
+  padding-top: 1rem;
+}
+
+#profile-link{
+  grid-area: "profile-link";
+}
+
+#subtitle {
+  margin: 0 auto;
+  padding-top: .5rem;
+  text-shadow: 1px 1px 2px black;
+  width: 100%;
+}
+
+#welcome-section::before{
+  background-image: url("https://cdn.pixabay.com/photo/2017/12/28/15/06/background-3045402_960_720.png");
+  background-size: cover;
+  position: fixed;
+  /*background-repeat: repeat-y;*/
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -1;
+  z-index: -1;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin-top: 2em;
+}

@@ -1,0 +1,168 @@
+@media(max-width: 850px){
+  #name-div{
+    visibility: hidden;
+  }
+  
+  header{
+  display: block;
+  color: white;
+}
+  
+  #nav-bar{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  height: 20px;
+  position: relative;
+  margin: 0 auto;
+  bottom: 30px;
+}
+  #header-img{
+  display: block;
+  height: 100px;
+  width: auto;
+  text-align: left;
+}
+  
+}
+
+body{
+  font-family: 'Rajdhani', sans-serif;
+  background-color: black;
+  color: #006a8a;
+}
+
+header::before{
+  background-color: #FEDB00;
+  background-size: cover;
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 115px;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  opacity: .9;
+}
+
+header{
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows:25% 15%;
+  grid-template-areas:
+    "header-image name"
+    "header-image nav-bar";
+  color: white;
+  align-items: flex-start;
+  grid-gap: 30px;
+}
+
+h2{
+  font-size: 30px;
+}
+
+h3{
+  font-size: 25px;
+}
+
+p{
+  font-size: 20px;
+}
+
+#header-img{
+  height: 100px;
+  width: auto;
+}
+
+#name{
+  height: 75px;
+  font-size: 50px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#nav-bar{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  height: 20px;
+  position: relative;
+  right: 30px;
+}
+
+#about{
+  display: flex;
+  justify-content: center;
+}
+
+#about-img{
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+}
+
+#main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#product{
+  display: block;
+  margin: 10px auto;
+}
+
+#contact{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-color: #FEDB00;
+  border-width: 2px;
+  border-style: solid;
+  padding: 0px 0px 10px 0px;
+  width: 500px;
+}
+
+#video{
+  display: block;
+  margin: 35px auto;
+}
+
+.nav-link{
+  font-size: 20px;
+  color: white;
+}
+
+.rough{
+  background-color: white;
+}
+
+.center{
+  display: block;
+  margin: 0 auto;
+}
+.words{
+  width: 90%;
+}
+
+.txt-ctr{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
